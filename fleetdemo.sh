@@ -7,19 +7,19 @@ ENDPOINT_URL_OPTION=""
 REGION="us-east-1"
 TIMESTAMP=`date +%s`
 ACCOUNT_ID=`aws sts get-caller-identity --query "Account" --output text`
-DEFAULT_VEHICLE_NAME="fleetwisevehicle"
+DEFAULT_VEHICLE_NAME="samplevehicle"
 VEHICLE_NAME=""
-TIMESTREAM_DATABASE_NAME="IoTFleetWiseDatabase-${TIMESTAMP}"
-TIMESTREAM_TABLE_NAME="VehicleDataTable"
+TIMESTREAM_DATABASE_NAME="TSDB-${TIMESTAMP}"
+TIMESTREAM_TABLE_NAME="VDT"
 CAMPAIGN_FILE_NAME=""
 DEFAULT_CAMPAIGN_FILE_NAME="campaign-vehicle-event.json"
 DBC_FILE_NAME=""
 DEFAULT_DBC_FILE_NAME="vehicledatasignal.dbc"
 CLEAN_UP=false
 FLEET_SIZE=1
-BATCH_SIZE=$((`nproc`*2))
+BATCH_SIZE=$((`nproc`*4))
 HEALTH_CHECK_RETRIES=400 
-MAX_ATTEMPTS_ON_REGISTRATION_FAILURE=6
+MAX_ATTEMPTS_ON_REGISTRATION_FAILURE=4
 FORCE_REGISTRATION=false
 
 parse_args() {
@@ -552,7 +552,7 @@ else
     done
 fi
 
-DELAY=50
+DELAY=60
 echo "This from Line 580: Waiting ${DELAY} seconds for data to be collected"
 sleep ${DELAY}
 
