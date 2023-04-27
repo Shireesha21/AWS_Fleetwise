@@ -5,7 +5,7 @@
     "collectionScheme": {
       "conditionBasedCollectionScheme": {
         "conditionLanguageVersion": 1,
-        "expression": "$variable.`Vehicle.ABS.DemoBrakePedalPressure` > 7000",
+        "expression": "$variable.`Vehicle.ABS.DemoBrakePedalPressure` > 375",
         "minimumTriggerIntervalMs": 1000,
         "triggerMode": "ALWAYS"
       }
@@ -18,15 +18,18 @@
       {
         "name": "Vehicle.ABS.DemoBrakePedalPressure"
       },
-      {
-        "name": "Vehicle.ABS.Speed"
-      },
-      {
-        "name": "Vehicle.VehicleInfoMessage.VehicleID"
-      },
-      {
-        "name": "Vehicle.VehicleInfoMessage.FuelType"
-      }
+          {
+		        "name": "Vehicle.ACM.Speed"
+			    },
+			        {
+					      "name": "Vehicle.ACM.Gear"
+					          },
+						      {
+							            "name": "Vehicle.VehicleInfoMessage.VehicleID"
+								        },
+									    {
+										          "name": "Vehicle.VehicleInfoMessage.FuelType"
+											      }
     ]
   }
   
