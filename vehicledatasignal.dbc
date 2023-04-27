@@ -38,7 +38,10 @@ BO_ 401 ECM: 8 Vector__XXX
 
 BO_ 532 ABS: 6 Vector__XXX
  SG_ DemoBrakePedalPressure : 0|8@0+ (75,0) [0|19125] "kPa" Vector__XXX
+
+BO_ 531 ACM: 6 Vector__XXX
  SG_ Speed : 8|16@1+ (0,0) [0|250] "km/h" Vector__XXX
+ SG_ Gear : 0|4@1+ (0,0) [0|15] "" Vector__XXX
 
 BO_ 3 VehicleInfoMessage: 8 Vector__XXX
  SG_ VehicleID : 24|16@0+ (1,0) [0|65535] "" Vector__XXX
