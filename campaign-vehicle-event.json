@@ -22,9 +22,6 @@
         "name": "Vehicle.ABS.Speed"
       },
       {
-        "name": "Vehicle.ABS.Gear"
-      },
-      {
         "name": "Vehicle.VehicleInfoMessage.VehicleID"
       },
       {
