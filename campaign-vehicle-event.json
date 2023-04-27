@@ -18,18 +18,18 @@
       {
         "name": "Vehicle.ABS.DemoBrakePedalPressure"
       },
-          {
-		        "name": "Vehicle.ACM.Speed"
-			    },
-			        {
-					      "name": "Vehicle.ACM.Gear"
-					          },
-						      {
-							            "name": "Vehicle.VehicleInfoMessage.VehicleID"
-								        },
-									    {
-										          "name": "Vehicle.VehicleInfoMessage.FuelType"
-											      }
+      {
+	"name": "Vehicle.ACM.Speed"
+      },
+      {
+	"name": "Vehicle.ACM.Gear"
+      },
+      {
+        "name": "Vehicle.VehicleInfoMessage.VehicleID"
+      },
+      {
+	"name": "Vehicle.VehicleInfoMessage.FuelType"
+      }
     ]
   }
   
